@@ -5,7 +5,7 @@ import datetime                                                        # 날짜/
 
 pirPin = MotionSensor(16)                                              # GPIO 16번핀을 PIR 모션 센서 입력 핀으로 초기화
 
-picam2 = Picamera2()                                                   # Picamera2 객체 생성
+picam2 = Picamera2()                                                   # 카메라를 제어할 Picamera2 객체 생성
 camera_config = picam2.create_preview_configuration()                  # 카메라미리보기 설정 구성(해상도와 설정값)
 picam2.configure(camera_config)                                        # 카메라에 설정 적용
 picam2.start()                                                         # 카메라 센서를 켜고 촬영 대기 상태로 만든다.
